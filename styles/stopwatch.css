@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: var(--main-color);
+  padding-bottom: 80px;
+  margin: 0;
+}
+
+:root {
+  --main-color: #191919;
+  --the-green: #050;
+  --darker-green: #040;
+  --the-red: #500;
+  --darker-red: #400;
+}
+
+main {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%; */
+  display: inline-block;
+}
+
+h2 {
+  color: white;
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding: 100px 85px;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+
+.time-container:hover {
+  background-color: #202020;
+}
+
+.border-orange {
+  border-color: orange;
+}
+
+.control-btns-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding: 0 3px 10px;
+}
+
+.start-btn {
+  padding: 20px 15px;
+  border-radius: 50%;
+  background-color: var(--the-green);
+  color: rgb(0, 255, 0);
+  border: solid var(--main-color) 2px;
+  outline: 2px var(--the-green) solid;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: var(--darker-green);
+  outline-color: var(--darker-green);
+}
+
+.start-color {
+  background-color: var(--the-red);
+  color: rgb(239, 69, 69);
+  border: solid var(--main-color) 2px;
+  outline: 2px var(--the-red) solid;
+}
+
+.start-color:hover {
+  background-color: var(--darker-red);
+  outline-color: var(--darker-red);
+}
+
+.lap-btn {
+  padding: 20px 18px;
+  border-radius: 50%;
+  background-color: #333;
+  color: gray;
+  border: solid var(--main-color) 2px;
+  outline: 2px #333 solid;
+  cursor: pointer;
+}
+
+.lap-btn:hover {
+  background-color: #282828;
+  outline-color: #282828;
+}
+
+.lap-off {
+  color: white;
+  background-color: #444;
+}
+
+.reset-style {
+  padding: 20px 12px;
+}
+
+.lap-lines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.left-align {
+  text-align: start;
+}
+
+.right-align {
+  text-align: end;
+}
+
+@media (max-width: 400px) {
+  .time-container {
+    padding: 80px 65px;
+  }
+}
